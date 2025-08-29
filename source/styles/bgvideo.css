@@ -1,0 +1,33 @@
+.bgvideo {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center; /*для размещения текста по середине*/
+    align-items: center; /*для размещения текста по середине*/
+}
+
+.bgvideo video {
+    width: 100%;
+    height: 70vh; /*занимает 70% окна браузера по высоте*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1; /*опредлеяем последовательность наслоения*/
+}  
+.effect { /*создан для создания дополнительно слоя с целью затемнить фон*/
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 2; /*опредлеяем последовательность наслоения*/
+    background-color: rgba(0, 0, 0, 0.274); /*устанавливаем прозрачность черный цвет и прозрачность 25%*/
+}  
+
+.video-text {
+    color: aliceblue;
+    z-index: 2; /*опредлеяем последовательность наслоения*/
+}
